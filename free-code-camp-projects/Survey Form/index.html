@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Bem vindo à coleta de dados!</h1>
+        <p id="description">Garantimos que seus dados não estarão seguros, e não informamos para que usaremos.</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <div class="campo">
+                <label id="name-label" for="name">Nome:
+                    <input type="text" id="name" placeholder="Insira seu nome completo" required></label>
+            </div>
+            <div class="campo">
+                <label id="email-label" for="email">E-mail:
+                    <input type="email" id="email" placeholder="Seu melhor e-mail" required></label>
+            </div>
+            <div class="campo">
+                <label id="number-label" for="number">Número:
+                    <input type="number" id="number" min="0" max="999999999" placeholder="Seu número de contato" required></label>
+            </div>
+            <div class="campo">
+                <label for="dropdown" id="dropdown-label">Estado Civil:
+                    <select name="dropdown" id="dropdown">
+                        <option value="">Selecione</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="separado">Separado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+                </label>
+            </div>
+            <div class="campo">
+                <label for="masculino-checkbox">
+                    <input type="radio" id="masculino-checkbox" value="masculino" name="sexo">Masculino
+                </label>
+                <label for="feminino-checkbox">
+                    <input type="radio" id="feminino-checkbox" value="feminino" name="sexo">Feminino
+                </label>
+            </div>
+            <div class="campo">
+                <label for="alcool" id="alcool-label">
+                    <input type="checkbox" id="alcool" name="checkboxes" value="alcool">
+                    Faz uso de álcool
+                </label>
+            </div>
+                <div class="campo">
+                    <label for="cigarro" id="cigarro-label">
+                        <input type="checkbox" id="cigarro" name="checkboxes" value="cigarro">
+                        Fuma
+                    </label>
+                </div>
+                <div class="campo">
+                    <label for="remedio" id="remedio-label">
+                        <input type="checkbox" id="remedio" name="checkboxes" value="remedio">
+                        Faz uso de remédio controlado
+                    </label>
+                </div>
+            <div class="campo">
+                <label for="outras-informacoes" id="outras-informacoes-label">Outras informações:
+                    <textarea name="outras-informacoes" id="outras-informacoes" cols="100" rows="3"></textarea>
+                </label>
+            </div>
+            <div class="campo"><button id="submit">Enviar</button></div>
+        </form>
+    </main>
+</body>
+</html>

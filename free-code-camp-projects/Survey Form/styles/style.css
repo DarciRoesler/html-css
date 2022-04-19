@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.campo {
+  margin: 10px;
+}
+
+body {
+  background-color: lightblue;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(0, 255, 191);
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 5em;
+}
+
+header p {
+  font-size: 2em;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(0, 153, 255);
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px;
+}
+
+label {
+  font-size: 2em;
+}
+
+[type="text"],
+[type="number"],
+[type="email"]{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+}
+
+select {
+  font-size: 1em;
+}
+
+button {
+  font-size: 2em;
+  width: 100%;
+}
